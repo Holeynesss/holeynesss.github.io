@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="Eclipse非著名bug 58945  since 2004
+我呢，是好了伤疤忘了痛。之前一直想好好梳理一下在B公司待的那两周的全过程，但是现在，明天就要报道新公司的现在，已经不太想过多得陷身于有点痛的回忆里。">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Holeyness">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Eclipse非著名bug 58945 since 2004"/>
+    
+
+    <!--Open Graph Description-->
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Bonboru"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article" />
+    
+
+    <!--Page Cover-->
+    
+
+    <meta name="twitter:card" content="summary" />
+    
+
+    <!-- Title -->
+    
+    <title>Eclipse非著名bug 58945 since 2004 - Bonboru</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- Google Analytics -->
+    
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+<body>
+
+<div class="bg-gradient"></div>
+<div class="bg-pattern"></div>
+
+<!-- Menu -->
+<!--Menu Links and Overlay-->
+<div class="menu-bg">
+    <div class="menu-container">
+        <ul>
+            
+            <li class="menu-item">
+                <a href="/">
+                    Home
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/archives">
+                    Archives
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/about">
+                    About
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/contact.html">
+                    Contact
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+<!--Hamburger Icon-->
+<nav>
+    <a href="#menu"></a>
+</nav>
+
+<div class="container">
+
+    <!-- Main Content -->
+    <div class="row">
+    <div class="col-sm-12">
+
+        <!--Title and Logo-->
+        <header>
+    <div class="logo">
+        <a href="/"><i class="logo-icon fa fa-battery-half" aria-hidden="true"></i></a>
+        
+        
+    </div>
+</header>
+
+        <section class="main">
+            
+<div class="post">
+
+    <div class="post-header">
+        <h1 class="title">
+            <a href="/%E4%B8%8D%E6%83%B3%E5%BD%93%E5%B0%86%E5%86%9B%E7%9A%84%E5%8E%A8%E5%AD%90%E4%B8%8D%E6%98%AF%E5%A5%BD%E8%A3%81%E7%BC%9D/Eclipse%E9%9D%9E%E8%91%97%E5%90%8Dbug-58945-since-2004/">
+                Eclipse非著名bug 58945 since 2004
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="category">
+                    <a href="/categories/不想当将军的厨子不是好裁缝/">不想当将军的厨子不是好裁缝</a>
+                </span>
+            <br/>   
+            
+                <span class="date">2017-05-01</span>
+            
+        </div>
+    </div>
+
+    <div class="content">
+
+        <!-- Gallery -->
+        
+
+        <!-- Post Content -->
+        <p>Eclipse非著名<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=58945" target="_blank" rel="noopener">bug 58945</a>  since 2004</p>
+<p>我呢，是好了伤疤忘了痛。<br>之前一直想好好梳理一下在B公司待的那两周的全过程，但是现在，明天就要报道新公司的现在，已经不太想过多得陷身于有点痛的回忆里。</p>
+<a id="more"></a>
+<p>我说我觉得八点多钟到家已经比较晚了，跟我闲谈的上级说，你觉得你做开发的跟她测试的一起打卡回家，合适吗。<br>我说我觉得当天任务完成了，下班时间到了下班没有哪里不对劲，他说，你觉得八点多钟到家很晚了，我们九点多才从公司回家。<br>我说我觉得要是需要加班的话，周末效率会更高一些，毕竟每天下午七点钟下班效率就已经很低了，他说，难道要专门为你来安排6天的任务吗。<br>十分钟以前，他还在跟我畅谈之后的工作，说什么会给我分配哪些任务，十分钟后，就让人事的小姐姐递给了我一张离职申请表，备注部分写着试用期不合格。<br>（本以为已经释怀啦，但是现在回想起来还是挺难过的。）<br>之后跟某家财富中心附近的一位面试官提到这个问题，他可能是没有直接地贬低我，而是告诉我说，我还年轻，不懂工作方面的学习很正常。听那口气就好像是我被诊断患有精神病，但是病情还在药物可控制的范围内似的。</p>
+<p>我有排斥加班吗，没有。<br>当你前几天还跟旁边的人说，你觉得现在的公司挺好的，去上班都没有任何抵触情绪，工作中时间也过得很快，同事们人都很好，办公室气氛也很好。等等。几乎全是正面的评价，末了，还接一句，觉得自己好幸运。<br>后边的那一天，就在公司楼下委屈地抱着旁边的人哭。看到公司老大出差回来路过，也只得在心里默默地念到，沙杨娜娜，我会记得周末加班的时候，你家小孩给你打电话，办公室里安静地只有我敲键盘的声音，以及电话那头稚嫩的声音问道“老鼠ao你没得”。<br>你可能永远也不会原谅平时好像跟大家也包括你打成一片，关系并不疏远的家伙，在你想着过去的两周里发生的一切并非不愉快，于是跟他微笑着说“我走啦，拜拜”的时候，他突然拉开距离，很官方地来了一句“慢走”。诸如此类的事。此刻的想法是与之老死不相往来。</p>
+<hr>
+<p>啊喂！醒醒！你的本意是打造技术博客啊！<br>好吧。那就粗略地谢谢技术方面的东西。<br>很粗，比糟糠粗多了。<br>EJB+Wildfly，本意是实现server端与client端异地。但这个过程就只达到了与之前遇到的发布方式无差别的结果。<br>前端，嗯，被页面布局搞疯吧。1像素1像素地去做调整，背地里骂了用无序列表布局表单的家伙三百回不止。WTF.门夹核桃的脑袋吗……实际上我也并不是很清楚用ul来布局form到底流行不流行，适用不适用。</p>
+<p>不写啦，睡大觉明天 BRAND NEW BEGINNING.</p>
+<p>P.S. 标题来自于忙碌的Eclipse标签折叠但不可多行显示。<br>P.P.S. 六月份将发布的新一代Eclipse Oxygen貌似开始支持这个令人期待的功能。<br>P.P.P.S. Release Date: Wednesday, June 28, 2017</p>
+
+    </div>
+
+    
+
+    
+
+    <!-- Comments -->
+    
+    <div class="comments">
+        
+<div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
+</div>
+
+
+
+    </div>
+    
+
+</div>
+        </section>
+
+    </div>
+</div>
+
+</div>
+
+<!-- Footer -->
+<div class="push"></div>
+
+<footer class="footer-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 footer-about">
+                <h2>About</h2>
+                <p>
+                    This <strong>COOL</strong> theme was developed by <a href="https://github.com/klugjo" target="_blank" rel="noopener">Jonathan Klughertz</a>. <br/> By the way, my name is Toru.<br/>どうぞよろしくお願いいたします。(｡･∀･)ﾉﾞ
+                </p>
+            </div>
+            
+    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 recent-posts">
+        <h2>Recent Posts</h2>
+        <ul>
+            
+            <li>
+                <a class="footer-post" title="大黄还是不高兴" href="/IDK/Argue-with-Sombody/">大黄还是不高兴</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" title="没有猫咪在身边" href="/IDK/home-alone-no-cats-here/">没有猫咪在身边</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" title="哪个更让人痛彻心扉，是昔日好友的改变还是发觉昔日好友向着自己讨厌的方向变了" href="/IDK/what-hurts-the-most/">哪个更让人痛彻心扉，是昔日好友的改变还是发觉昔日好</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" title="一个人玩多人在线游戏的时候，请闭上你那速度像机关枪一样喷射出污言秽语的嘴" href="/IDK/play-online-multiplayer-game-silently-when-you-are-alone/">一个人玩多人在线游戏的时候，请闭上你那速度像机关枪</a>
+            </li>
+            
+        </ul>
+    </div>
+
+
+
+            
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 footer-categories">
+    <h2>Categories</h2>
+    <ul>
+        
+        <li>
+            <a class="footer-post" href="/categories/%E5%8D%9A%E5%AE%A2%E6%97%A5%E5%BF%97/">博客日志</a>
+        </li>
+        
+        <li>
+            <a class="footer-post" href="/categories/%E5%88%86%E7%B1%BBTEST/">分类TEST</a>
+        </li>
+        
+        <li>
+            <a class="footer-post" href="/categories/SHOT/">SHOT</a>
+        </li>
+        
+        <li>
+            <a class="footer-post" href="/categories/Others/">Others</a>
+        </li>
+        
+    </ul>
+</div>
+
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ul class="list-inline footer-social-icons">
+                    
+                    <li class="list-inline-item">
+                        <a href="https://github.com/Holeynesss" target="_blank" rel="noopener">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-github"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://twitter.com/CastOliveToMK" target="_blank" rel="noopener">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-twitter"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://www.facebook.com/yellowconan" target="_blank" rel="noopener">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-facebook"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="mailto:castolivetomk@gmail.com">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-envelope-o"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="footer-copyright">
+                    Creative Commons <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh_TW" target="_blank" rel="noopener">BY-NC-SA</a> | Design & Hexo <a href="http://www.codeblocq.com/" target="_blank" rel="noopener">Jonathan Klughertz</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- After footer scripts -->
+
+<!-- jQuery -->
+<script src="//ajax.aspnetcdn.com/ajax/jquery/jquery-2.1.4.min.js"></script>
+
+<!-- Tween Max -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Custom JavaScript -->
+
+<script src="/js/main.js"></script>
+
+
+<!-- Disqus Comments -->
+
+<script type="text/javascript">
+    var disqus_shortname = 'bonboru';
+
+    (function(){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+</body>
+
+</html>

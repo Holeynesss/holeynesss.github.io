@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="做出标题里理直气壮样的人，并不是我。作为一个小白，我连忙制止他继续说下去”ちょっと待ってください！请问您说的JSP是Java语言究竟是什么意思？”希望大神能给我个解释。毕竟，在我的眼里JSP是HTML+Java，从简单的数学集合的角度来讲，JSP与Java语言划等号是不科学的。他心里可能带鄙视地说“你不信可以去问问你们老师，就说是我说的。”嗯，很鄙视面前这个小菜鸟，鄙视到不想给小菜鸟讲讲跟1+1=2难度差不多的问题。之前，还遇到面试官担心得最多的问题是，女生做Java开发很辛苦，会不会抗不下来。（Excuse me?）怎么不去做测试或者前端呢。（EXCUSE ME? 请问测试前端很容易还是怎么的……？）还有人说，女生能在这一行发展下去的基本上都是特别特别拔尖的。谁还不是个人还是在咋的，就不允许女生如50%以上的男性程序员那样能力平平了吗……">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Holeyness">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="JSP是Java语言(理直气壮样)"/>
+    
+
+    <!--Open Graph Description-->
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Bonboru"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article" />
+    
+
+    <!--Page Cover-->
+    
+
+    <meta name="twitter:card" content="summary" />
+    
+
+    <!-- Title -->
+    
+    <title>JSP是Java语言(理直气壮样) - Bonboru</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- Google Analytics -->
+    
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+<body>
+
+<div class="bg-gradient"></div>
+<div class="bg-pattern"></div>
+
+<!-- Menu -->
+<!--Menu Links and Overlay-->
+<div class="menu-bg">
+    <div class="menu-container">
+        <ul>
+            
+            <li class="menu-item">
+                <a href="/">
+                    Home
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/archives">
+                    Archives
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/about">
+                    About
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/contact.html">
+                    Contact
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+<!--Hamburger Icon-->
+<nav>
+    <a href="#menu"></a>
+</nav>
+
+<div class="container">
+
+    <!-- Main Content -->
+    <div class="row">
+    <div class="col-sm-12">
+
+        <!--Title and Logo-->
+        <header>
+    <div class="logo">
+        <a href="/"><i class="logo-icon fa fa-battery-half" aria-hidden="true"></i></a>
+        
+        
+    </div>
+</header>
+
+        <section class="main">
+            
+<div class="post">
+
+    <div class="post-header">
+        <h1 class="title">
+            <a href="/%E4%B8%8D%E6%83%B3%E5%BD%93%E5%B0%86%E5%86%9B%E7%9A%84%E5%8E%A8%E5%AD%90%E4%B8%8D%E6%98%AF%E5%A5%BD%E8%A3%81%E7%BC%9D/JSP%E6%98%AFJava%E8%AF%AD%E8%A8%80-%E7%90%86%E7%9B%B4%E6%B0%94%E5%A3%AE/">
+                JSP是Java语言(理直气壮样)
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="category">
+                    <a href="/categories/不想当将军的厨子不是好裁缝/">不想当将军的厨子不是好裁缝</a>
+                </span>
+            <br/>   
+            
+                <span class="date">2017-04-18</span>
+            
+        </div>
+    </div>
+
+    <div class="content">
+
+        <!-- Gallery -->
+        
+
+        <!-- Post Content -->
+        <p>做出标题里理直气壮样的人，并不是我。<br>作为一个小白，我连忙制止他继续说下去”ちょっと待ってください！请问您说的JSP是Java语言究竟是什么意思？”希望大神能给我个解释。毕竟，在我的眼里JSP是HTML+Java，从简单的数学集合的角度来讲，JSP与Java语言划等号是不科学的。他心里可能带鄙视地说“你不信可以去问问你们老师，就说是我说的。”嗯，很鄙视面前这个小菜鸟，鄙视到不想给小菜鸟讲讲跟1+1=2难度差不多的问题。<br>之前，还遇到面试官担心得最多的问题是，女生做Java开发很辛苦，会不会抗不下来。（Excuse me?）怎么不去做测试或者前端呢。（EXCUSE ME? 请问测试前端很容易还是怎么的……？）还有人说，女生能在这一行发展下去的基本上都是特别特别拔尖的。谁还不是个人还是在咋的，就不允许女生如50%以上的男性程序员那样能力平平了吗……</p>
+<a id="more"></a>
+<p>说出来超心塞的，我做梦都想着有朝一日能成为一名触啊。（迷茫地吟唱中……）<br>我不担心自己干不下来男生写得了的代码加的了的班，我只是担心自己能力确实不够。（我不讨厌学习不讨厌学习新东西，只是最近，没工作才是最大的石头，解决这块石头之前，真的很难集中精力来吧啦吧啦地学Linux和Redis。）在这片IT技术荒漠里，我摸黑了这么就还是找不到工作。_(´ཀ`」 ∠)_（虽然承认一下都丢人得要死，最近愈发地觉得自己应该正视一下这个问题了。OTZ）</p>
+<p>因为闲得内心的忐忑一刻也停不下来，于是整理整理之前的面试问题。<br>Java基础知识板块真的糟糕透了。自己的饭碗都搞得云里雾里的，写到这里，就稍微地鄙视一下自己吧。= -=</p>
+<ul>
+<li>提醒我应该刷刷面试题的好好先生A<blockquote>
+<ol>
+<li>Java基本数据类型<br><small>我答曰：…… String……<br>面试官提醒我问到，String是基本数据类型吗？反射弧超长的我，回到家才想起来刚刚那个愚蠢的我漏掉了byte，int的其他两种以及……char</small></li>
+<li>接口和抽象类的区别<br><small>(迷茫脸)<br>在网上查询了之后才知道这个问题问的啥(´・ω・`)<br><a href="http://blog.csdn.net/a907691592/article/details/51597937" target="_blank" rel="noopener">条条款款罗列清晰+Java8特性的解答</a><br><a href="http://stackoverflow.com/questions/1913098/what-is-the-difference-between-an-interface-and-abstract-class" target="_blank" rel="noopener">Interesting ideas</a><blockquote>
+<ul>
+<li>An interface is a contract: The guy writing the interface says, “hey, I accept things looking that way”, and the guy using the interface says “OK, the class I write looks that way”.</li>
+<li>An interface is an empty shell, it’s just a pattern.</li>
+<li>Abstract classes, unlike interfaces, are classes. (!!!!!)</small>
+</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li>标题来源给了我一条很好建议的B<blockquote>
+<p><small>他问的问题我不太记得了，大概说了他们公司不是用JSP，而是直接HTML+Ajax。<br>他说了那么多，我就记住了他一个好。他说，平时遇到的问题要记录下来，不然之后遇到还是不会。（我当时应该把包包里的草稿本兼笔记本掏出来给他看看的。）</small><br><small style="font-size:9px; color:gray;">我也并不是一个记仇的家伙，但每每想到他那“你这都没学好，滚回学校问问你的老师吧”的语气，我决定把他在我人生当中的那一点点启发的记忆给抹掉了。</small></p>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li>重头戏这个和那个的区别这个和那个相比优缺点是什么的C</li>
+</ul>
+<blockquote>
+<p>这是个很长的List ;W; </p>
+<blockquote>
+<p><small>1. Vector与AarrayList的区别<br>没有特殊需求的话请用AarryList</small></p>
+<blockquote>
+<p><small>① Vector是同步的，AarryList不是。<br>多线程同时访问ArrayList时，我们必须在外部同步代码块（更新列表接口或者仅仅是修改单个元素）</small><strong style="color:red;">What??</strong><br><small>② 数据空间增长方式不一样。<br>两者都是使用数组来存储内容，元素插入到数组里，若空间不够的情况下，Vector默认是将空间扩展至原来的两倍（增加一倍），而ArrayList是增加原来的50%，即扩展空间到原来的3/4。</small><br><a href="http://stackoverflow.com/questions/2986296/what-are-the-differences-between-arraylist-and-vector" target="_blank" rel="noopener">Reference</a></p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p><small>2. HashMap与Hashtable的区别</small></p>
+<blockquote>
+<p><small>① Hashtable is synchronized, whereas HashMap is not. <a href="http://stackoverflow.com/questions/1085709/what-does-synchronized-mean" target="_blank" rel="noopener">What does ‘synchronized’ mean? 同步是什么鬼？</a></small><br><small>② Hashtable does not allow null keys or values.  HashMap allows one null key and any number of null values.</small></p>
+<blockquote>
+<p><small>② Hashtable不允许有空键和空值，HashMap允许一个空键(Key嘛！)且空值不限制。</small></p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p><small>③ One of HashMap’s subclasses is LinkedHashMap, so in the event that you’d want predictable iteration order (which is insertion order by default), you could easily swap out the HashMap for a LinkedHashMap. This wouldn’t be as easy if you were using Hashtable.</small></p>
+<blockquote>
+<p><small>③ HashMap有个叫做LinkedHashMap的子类，如果你想要可预测的迭代顺序（即默认的插入顺序），你可以超方便地将HashMap变成LinkedHashMap来用。Hashtable可没那么好使。</small></p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p><small>如果不需要同步的话，推荐使用HashMap。如果需要同步的话，你也可以试试 <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentHashMap.html" target="_blank" rel="noopener">ConcurrentHashMap</a>。再如果，你希望HashMap线程安全，那就用<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collections.html" target="_blank" rel="noopener">Collections.synchronizedMap()</a>方法。</small><br><a href="http://stackoverflow.com/questions/40471/differences-between-hashmap-and-hashtable" target="_blank" rel="noopener">Reference</a></p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p><small>3. 继承的网</small></p>
+<blockquote>
+<p><small>Q: 接口可以继承接口吗？<br>A: 可以。extends<del></small><br><small>Q: 抽象类可以实现接口吗？<br>A: 可以。（比如java.util中的AbstractCollection类就是实现的Collection接口）</small><br><small>Q: 抽象类可以继承实体类吗？<br>A: 行√</small><br><small> ~</del>咳咳咳，这里是不是还差一个接口是否可以继承抽象类。~~</small></p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p><small>4. 数据库存储过程的优缺点</small></p>
+<blockquote>
+<p>Advantages</p>
+<blockquote>
+<p><small>① 能减少不必要的数据传输，从而减少客户端到与服务器之间的网络使用。</small><br><small>② 更安全：数据库管理员可控制谁有权访问存储过程。(What?</small><br><small>③ 减少开发成本，增加可靠性。(What?</small><br><small>④ 可通过调整存储过程来提高性能。当再次执行同一存储过程时，可以使用之前的缓存执行计划。(What?</small><br><small>⑤ 抽象或分离客户端与服务器端功能。(What?</small><br><small>⑥ 用安全又统一的方式来访问其他数据库对象。(What?</small><br><small>⑦ 防止SQL注入攻击。(It makes sense.)</small><br><small>⑧ Unit testable.</small><br><small>⑨ 封装业务逻辑，减少因客户端程序的错误导致的数据损坏的几率。</small></p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>Drawbacks</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p><small>①  Writing and maintaining stored procedures requires more specialized skills.</small><br><small>②  There are no debuggers available for stored procedures.</small><br><small>③  Stored procedure language may differ from one database system to another.</small><br><small>④  Poor exception handling.</small><br><small>⑤  Tightly coupled to the database system. （耦合紧密）</small><br><small>⑥  Not possible to use objects. (what??)</small><br><small>⑦  Sometimes it is hard to understand the logic written in dynamic SQL.</small></p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p><a href="https://dumindag.wordpress.com/2009/11/03/advantages-and-disadvantages-of-using-stored-procedures/" target="_blank" rel="noopener">Reference</a></p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p><small>5. JDBC操作数据库的步骤。Statement和PreparedStatement的区别。</small></p>
+<blockquote>
+<p><small><a href="http://www.cnblogs.com/hongten/archive/2011/03/29/1998311.html" target="_blank" rel="noopener">Click!</a></small><br><br><br><small><b>What are the differences?</b></small><br><br></p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th><small>java.sql.Statement</small></th>
+<th><small>java.sql.PreparedStatement</small></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><small>执行静态SQL语句</small></td>
+<td><small>执行预编译(precompiled)SQL语句</small></td>
+</tr>
+<tr>
+<td><small>运行时不能接受参数</small></td>
+<td><small>反复执行，可在运行时接受参数</small></td>
+</tr>
+<tr>
+<td><small>更慢</small></td>
+<td><small>更快</small></td>
+</tr>
+<tr>
+<td><small>无协议</small></td>
+<td><small>non sql binary协议。<br>In binary protocol communications to the server is faster because <strong>less data packets are transferred</strong>.</small></td>
+</tr>
+<tr>
+<td><small>更适用于执行DDL(Data Definition Language)-Create, drop, alter, and truncate.</small></td>
+<td><small>更适用于执行DML(Data Manipulation Language)命令-select, insert, update, and delete.</small></td>
+</tr>
+<tr>
+<td><small>不能用来储存/检索图片和文件(i.e. 使用BLOB-Binary Large Object, CLOB-Character Large Object数据类型)</small></td>
+<td><small>←我可以！(●’◡’●)</small></td>
+</tr>
+<tr>
+<td><small>没有setArray方法</small></td>
+<td><small>可以使用setArray方法设置java.sql.Array。<br>While sending it to database the driver converts this java.sql.Array to an SQL ARRAY.</small></td>
+</tr>
+<tr>
+<td><small>强制执行SQL注入</small></td>
+<td><small>java.sql.PreparedStatement prevents SQL injection, because text for all the parameter values is escaped in java JDBC.(转义)</small></td>
+</tr>
+<tr>
+<td><small>不提供addBatch()方法，只有addBatch(String sql)<br>因此，相同的SQL查询不能重复执行</small></td>
+<td><small>继承了Statement的所有方法，还添加了addBatch()方法。<br> addBatch() method-将一组参数添加到PreparedStatement对象的批命令中。<br>因此，相同SQL查询也可反复执行</small></td>
+</tr>
+<tr>
+<td><small>可读性不强- -什么鬼！需要连接SQL语句字符串QAQ</small></td>
+<td><small>可读性更强，更容易理解，运行的时候可以传不同的参数</small></td>
+</tr>
+<tr>
+<td><small>None.</small></td>
+<td><small>java.sql.PreparedStatement provides methods like getMetadata() and getParameterMetadata().<br><strong>getMetadata()</strong> - Method retrieves  ResultSetMetaData object that contains information about the columns of the ResultSet object that will be returned when PreparedStatement object is executed. <br><strong>getParameterMetadata()</strong> - method retrieves the number, types and properties of PreparedStatement object’s parameters in java JDBC.</small></td>
+</tr>
+<tr>
+<td><a href="http://www.javamadesoeasy.com/2015/07/12-differences-between-statement.html" target="_blank" rel="noopener">Reference</a></td>
+<td></td>
+</tr>
+</tbody></table>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p><small>6. Singleton单例类的例子。</small></p>
+<blockquote>
+<p><small>单例分为五种：懒汉，恶汉，双重校验锁，枚举和静态内部类。</small><br><a href="http://cantellow.iteye.com/blog/838473" target="_blank" rel="noopener">Click!</a></p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p><small>7. Struts2与Spring MVC的区别。</small></p>
+<blockquote>
+<p><a href="http://www.cygnet-infotech.com/blog/struts-2-vs-springmvc" target="_blank" rel="noopener">Click!</a></p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p><small>8. Hibernate与MyBatis的区别。</small></p>
+<blockquote>
+<p><a href="#">Click!</a> LOADING</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p><small>9. Spring MVC与JSP的区别。</small></p>
+<blockquote>
+<p><small>上瘾了还是在咋的？</small></p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p><small>10. 数据库检索的作用。</small></p>
+<blockquote>
+<p>LOADING…</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>整日都是一副很废柴的样子，时而提心吊胆，想要当当鸵鸟把头埋进沙子里；时而在某处找到一点点鸡汤，心理安慰自己说，肯定能找到归宿的。<br>而现在呢，什么也没想，就想着自己破天荒主动买了一条牛仔裤。OTZ<br>嘛，一想到因为无业导致的种种，比如天晴的蓝天白云阳光，都不是自己的，也挺难过的辣。</p>
+
+    </div>
+
+    
+
+    
+
+    <!-- Comments -->
+    
+    <div class="comments">
+        
+<div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
+</div>
+
+
+
+    </div>
+    
+
+</div>
+        </section>
+
+    </div>
+</div>
+
+</div>
+
+<!-- Footer -->
+<div class="push"></div>
+
+<footer class="footer-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 footer-about">
+                <h2>About</h2>
+                <p>
+                    This <strong>COOL</strong> theme was developed by <a href="https://github.com/klugjo" target="_blank" rel="noopener">Jonathan Klughertz</a>. <br/> By the way, my name is Toru.<br/>どうぞよろしくお願いいたします。(｡･∀･)ﾉﾞ
+                </p>
+            </div>
+            
+    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 recent-posts">
+        <h2>Recent Posts</h2>
+        <ul>
+            
+            <li>
+                <a class="footer-post" title="大黄还是不高兴" href="/IDK/Argue-with-Sombody/">大黄还是不高兴</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" title="没有猫咪在身边" href="/IDK/home-alone-no-cats-here/">没有猫咪在身边</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" title="哪个更让人痛彻心扉，是昔日好友的改变还是发觉昔日好友向着自己讨厌的方向变了" href="/IDK/what-hurts-the-most/">哪个更让人痛彻心扉，是昔日好友的改变还是发觉昔日好</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" title="一个人玩多人在线游戏的时候，请闭上你那速度像机关枪一样喷射出污言秽语的嘴" href="/IDK/play-online-multiplayer-game-silently-when-you-are-alone/">一个人玩多人在线游戏的时候，请闭上你那速度像机关枪</a>
+            </li>
+            
+        </ul>
+    </div>
+
+
+
+            
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 footer-categories">
+    <h2>Categories</h2>
+    <ul>
+        
+        <li>
+            <a class="footer-post" href="/categories/%E5%8D%9A%E5%AE%A2%E6%97%A5%E5%BF%97/">博客日志</a>
+        </li>
+        
+        <li>
+            <a class="footer-post" href="/categories/%E5%88%86%E7%B1%BBTEST/">分类TEST</a>
+        </li>
+        
+        <li>
+            <a class="footer-post" href="/categories/SHOT/">SHOT</a>
+        </li>
+        
+        <li>
+            <a class="footer-post" href="/categories/Others/">Others</a>
+        </li>
+        
+    </ul>
+</div>
+
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ul class="list-inline footer-social-icons">
+                    
+                    <li class="list-inline-item">
+                        <a href="https://github.com/Holeynesss" target="_blank" rel="noopener">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-github"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://twitter.com/CastOliveToMK" target="_blank" rel="noopener">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-twitter"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://www.facebook.com/yellowconan" target="_blank" rel="noopener">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-facebook"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="mailto:castolivetomk@gmail.com">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-envelope-o"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="footer-copyright">
+                    Creative Commons <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh_TW" target="_blank" rel="noopener">BY-NC-SA</a> | Design & Hexo <a href="http://www.codeblocq.com/" target="_blank" rel="noopener">Jonathan Klughertz</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- After footer scripts -->
+
+<!-- jQuery -->
+<script src="//ajax.aspnetcdn.com/ajax/jquery/jquery-2.1.4.min.js"></script>
+
+<!-- Tween Max -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Custom JavaScript -->
+
+<script src="/js/main.js"></script>
+
+
+<!-- Disqus Comments -->
+
+<script type="text/javascript">
+    var disqus_shortname = 'bonboru';
+
+    (function(){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+</body>
+
+</html>
